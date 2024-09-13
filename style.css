@@ -1,0 +1,153 @@
+@font-face{
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-family: YoungSerif-Regular;
+}
+@font-face {
+    src: url(assets/fonts/outfit/static/Outfit-ExtraLight.ttf);
+    font-family: Outfit-ExtraLight;
+}
+@font-face {
+    font-family: Outfit-Bold;
+    src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
+}
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(31, 56%, 89%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    padding: 20px;
+}
+.omelette{
+    width: 100%;
+    border-radius: 11px;
+}
+.preparation{
+    background-color: hsl(328, 100%, 97%);
+    border-radius: 8px;
+    margin: 20px 5px;
+}
+.preparation ul, .ingredient ul, .instruction ol{
+    padding: 15px 30px;
+    /* background-color: red; */
+}
+.preparation ul li, .ingredient ul li, .instruction ol li{
+    padding: 4.6px;
+}
+.pre::marker, .ingre::marker, .instruct::marker{
+    color: hsl(332, 47%, 40%);
+    font-family: YoungSerif-Regular;
+    font-weight: 300;
+}
+.ingredient, .instruction{
+    margin: 20px 0;
+    border-bottom: 2px solid hsl(30, 9%, 79%);
+}
+.instruct{
+    font-size: 13px;
+    line-height: 1.5;
+    color: hsl(10, 3%, 34%);
+    font-family: Outfit-ExtraLight;
+    font-weight: bold;
+}
+.pre{
+    font-family: Outfit-Regular;
+    font-weight: lighter lighter;
+}
+.nutrition{
+    margin: 20px 6.5px;
+}
+h1{
+    font-size: xx-large;
+    padding: 10px 1px;
+    color: hsl(15, 4%, 19%);
+    font-family: YoungSerif-Regular;
+}
+h2,h3{
+    color: hsl(20, 57%, 39%);
+    font-family: YoungSerif-Regular;
+    font-weight: 400;
+}
+h3{
+    font-size: 16px;
+    padding: 10px 10px;
+    font-family: Outfit-Bold;
+    font-weight: 1000;
+}
+h2{
+    font-size: larger;
+}
+p{
+    font-size: 12.5px;
+    line-height: 1.3;
+    color: hsl(24, 5%, 22%);
+    font-family: Outfit-ExtraLight;
+    font-weight: bold;
+}
+.ingre{
+    font-family: Outfit-Regular;
+    font-weight: lighter lighter;
+}
+.ins{
+    font-weight: 600;
+    color:  hsl(22, 7%, 24%);
+    font-size: 14px;
+    font-family: Outfit-Bold;
+}
+.nutrit{
+    font-size: 13px;
+    color:  hsl(12, 4%, 25%);
+    padding: 10px 1px;
+    font-family: Outfit-ExtraLight;
+}
+tr,td,th{
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+    padding: 7px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Outfit-Bold;
+    font-weight: lighter;
+}
+th{
+    text-align: left;
+    color: hsl(15, 4%, 21%);
+    font-size: 16px;
+}
+td{
+    color: hsl(20, 57%, 39%);
+    font-size: 16px;
+    font-weight: 800;
+}
+.attribution {
+    font-size: 16px; 
+    text-align: center;
+    font-family: Outfit-Bold;
+    margin: 50px 0px ;
+}
+.attribution a { 
+   color: hsl(228, 45%, 44%);
+}
+@media(max-width:375px){
+    .container{
+        width: 400px;
+        padding: 20px;
+    }
+    body{
+        background-color:  hsl(31, 62%, 83%);
+    }
+}
